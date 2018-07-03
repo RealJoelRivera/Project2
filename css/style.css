@@ -1,3 +1,23 @@
-.hero{
-    background-image:image(bsb-top)
+body{
+    align-content: center;
+    text-align: center;
+    background-color:#FBFB9B;
+    color:black;
+}
+
+ul{
+    
+}
+
+header{
+    background-color:#0E5816;
+    color:white;
+}
+
+.jumbotron{
+    background-image:image("bsb-top-view-fog-li.jpg")
+}
+
+li{
+    display:inline-block;
 }
