@@ -1,23 +1,74 @@
-body{
+body {
     align-content: center;
     text-align: center;
-    background-color:#FBFB9B;
-    color:black;
+    background-color: #9E5440;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    font-size: 14px
 }
 
-ul{
-    
+ul {
+    float: right;
 }
 
-header{
-    background-color:#0E5816;
-    color:white;
+header {
+    background-color: #9E5440;
+    color: white;
+    display: flex;
+
 }
 
-.jumbotron{
-    background-image:image("bsb-top-view-fog-li.jpg")
+.jumbotron {
+    background-image: url("../img/nature1.jpg");
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+    background-size:cover;
+ } 
+
+p {
+    text-shadow: 1px 2px 1px #96d9ea;
 }
 
-li{
-    display:inline-block;
+li {
+    display: inline-block;
+    margin-top: 10px;
+    border-bottom: 2px solid white
+}
+
+footer {
+    background-color: #9E5440;
+}
+
+.sum {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.popup{
+    font-size:18px;
+}
+
+#bear {
+    color: white;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+@media (max-width:450px) {
+
+    header {
+        display: block;
+    }
+    ul {
+        background-color: #9E5440;
+        width: 100%;
+        margin: auto;
+    }
+    li {
+        text-align: center;
+    }
 }

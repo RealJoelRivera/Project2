@@ -11,37 +11,41 @@
 
     <!--Custom styles here-->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h4>Bear Springs</h4>
         <ul>
-            <li>BSB Education</li>
-            <li>BSB Lectures</li>
-            <li>BSB Mission</li>
-            <li>BSB Preserves</li>
+            <li id="bsbe">BSB Education</li>
+            <li id="bsbl">BSB Lectures</li>
+            <li id="bsbm">BSB Mission</li>
+            <li id="bsbp">BSB Preserves</li>
         </ul>
     </header>
     <!--The background image will be placed into the CSS section-->
     <div class="jumbotron">
-    </div>
-    <div>
-        <p><h1>Affordable Conservation for All!!!</h1></p>
-        <button type="button">TRY FREE</button>
-    </div>
-    <div>
-        <h1>Why Do We Protect Nature?</h1>
-        <h5>Intact nature is needed to secure human life. When we protect nature, we protect humans.</h5>
-    </div>
-    <div>
-        <p>
-            Bear Springs Blossom Nature Conservation is an international nonprofit NGO BSB supports nature preserves, some call them nature reserves. We try to protect beautiful Nature so the next generation of humans have a chance to survive! Bear Springs Blossom: The name comes from a bear, who was drinking out of a spring, surrounded by blossoms... BSB tries to explain life on Earth, shows ecological restoration. You get a feeling: What is Nature, and how conservation of Nature can save lives!
-        </p>
-    </div>
-    <div>
-        <h4>Bear Springs</h4>
-        <p>Copyright<br>Bear Springs Blossom Nature Conservation<br>International charitable nonprofit org 501(c)(3)<br>All rights reserved<br>BSBNCG POB 63295 Pipe Creek 78063 TX USA<br>marianne@nature-education.org<br>edu@keepearthbeautiful.org</p>
+        <div>
+            <p>
+                <h1 id="title">Affordable Conservation for All!!!</h1>
+        </div>
+        <div class="popup" > 
+            <button type="button" id="click" onmouseover="mouseOver()" onmouseout="mouseOut()">TRY FREE</button>
+        </div>
+        <div>
+            <h1 id="question">Why Do We Protect Nature?</h1>
+            <!-- <p1>In tact Nature is needed to secure human life. When we protect nature, we protect humans.</p1>-->
+        </div>
+        <div class="sum">
+            <p>
+                Bear Springs Blossom Nature Conservation is an international nonprofit NGO BSB supports nature preserves, some call them nature reserves. We try to protect beautiful Nature so the next generation of humans have a chance to survive! Bear Springs Blossom: The name comes from a bear, who was drinking out of a spring, surrounded by blossoms... BSB tries to explain life on Earth, shows ecological restoration. You get a feeling: What is Nature, and how conservation of Nature can save lives!
+            </p>
+        </div>
+        <div class="footer">
+            <h4 id="bear">Bear Springs</h4>
+            <p>Copyright<br>Bear Springs Blossom Nature Conservation<br>International charitable nonprofit org 501(c)(3)<br>All rights reserved<br>BSBNCG POB 63295 Pipe Creek 78063 TX USA<br>marianne@nature-education.org<br>edu@keepearthbeautiful.org</p>
+        </div>
     </div>
 
     <!--Required scripts-->
@@ -49,6 +53,58 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!--Custom script here-->
-    <script></script>
+    <script>
+            
+        setTimeout(rainbow,8000);
+        
+        function rainbow(){
+            alert("Sign up for our mailing list!!"); 
+            //How can I create this instead of having it look basic and boring. Is it through CSS or through JS?
+        }
+        
+        function mouseOver(){
+            document.getElementById("click").style.color="red";
+        }
+        
+        function mouseOut(){
+            document.getElementById("click").style.color="black";
+        }
+        
+        /*
+        function mouseOver(){
+            document.getElementById("bsbe").style.color="blue";
+        }
+        
+        function mouseOut(){
+            document.getElementById("bsbe").style.color="white";
+        }
+        
+        function mouseOver(){
+            document.getElementById("bsbl").style.color="blue";
+        }
+        
+        function mouseOut(){
+            document.getElementById("bsbl").style.color="white";
+        }
+        
+        function mouseOver(){
+            document.getElementById("bsbm").style.color="blue";
+        }
+        
+        function mouseOut(){
+            document.getElementById("bsbm").style.color="white";
+        } 
+        
+        function mouseOver(){
+            document.getElementById("bsbp").style.color="blue";
+        }
+        
+        function mouseOut(){
+            document.getElementById("bsbp").style.color="white";
+        }
+        */
+        
+    </script>
 </body>
+
 </html>
